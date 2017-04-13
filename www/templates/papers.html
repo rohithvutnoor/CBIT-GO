@@ -1,0 +1,141 @@
+<ion-view view-title="Previous Papers">
+  <ion-content>
+	<!--<a  href="#/app/mine"><button class="button button-full button-positive">Mine</button></a>
+	-->
+	<progress value="{{downloadProgress}}" max="100"  style = "height:30px; background:white; border:0px;">
+</progress>
+	<!--<ion-scroll zooming="true" direction="xy" style="width: 260px; height: 350px">-->
+	<table>
+		<tr>
+			<td align='center'>Branch<br><br></td>
+			<td align='center'>I-I<br><br></td>
+			<td align='center'>I-II<br><br></td>
+			<td align='center'>II-I<br><br></td>
+			<td align='center'>II-II<br><br></td>
+			<td align='center'>III-I<br><br></td>
+			<td align='center'>III-II<br><br></td>
+		</tr>
+		<tr>
+			<td align='center'><br>IT&nbsp;&nbsp;</td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CSE , IT.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/IT.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/IT_0.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/IT_1.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('false')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/IT_2.rar')"></button></td>
+		</tr>
+		<tr>
+			<td align='center'><br>ECE&nbsp;&nbsp;</td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/ECE , EEE.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/ECE.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/ECE_0.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/ECE_1.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/ECE_2.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/ECE_3.rar')"></button></td>
+		</tr>
+		<tr>
+			<td align='center'><br>EEE&nbsp;&nbsp;</td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/ECE , EEE.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/EEE.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/EEE_0.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/EEE_1')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/EEE_2.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/EEE_3.rar')"></button></td>
+		</tr>
+		<tr>
+			<td align='center'><br>CSE&nbsp;&nbsp;</td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CSE , IT.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CSE.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CSE_0.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CSE_1.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CSE_2.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CSE_3.rar')"></button></td>
+		</tr>
+		<tr>
+			<td align='center'><br>BIO&nbsp;&nbsp;</td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/BIO TECH.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/BIOTECH.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/BIOTECH_0.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/BIOTECH_1.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/BIOTECH_2.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/BIO TECH_0.rar')"></button></td>
+		</tr>
+		<tr>
+			<td align='center'><br>MECH&nbsp;&nbsp;</td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CIVIL , MECH , PROD.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MECH.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MECH_0.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MECH_1.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MECH_2.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MECH_3.rar')"></button></td>
+		</tr><tr>
+			<td align='center'><br>PROD&nbsp;&nbsp;</td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CIVIL , MECH , PROD.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/PROD.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/PE.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/PROD_0.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/PE_0.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/PE_1.rar')"></button></td>
+		</tr><tr>
+			<td align='center'><br>CHEM&nbsp;&nbsp;</td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CHEM.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CHEM_0.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CHEM_1.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CHEM_2.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CHEM_3.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CHEM_4.rar')"></button></td>
+		</tr>
+		<tr>
+			<td align='center'><br>CIVIL&nbsp;&nbsp;</td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CIVIL , MECH , PROD.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CIVIL.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CIVIL_0.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CIVIL_1.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CIVIL_2.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/CIVIL_3.rar')"></button></td>
+		</tr>
+		<tr>
+			<td align='center'><br>MBA&nbsp;&nbsp;</td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MBA I SEM SUPPL 2016.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MBA II SEM MAIN 2016.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MBA III SEM SUPPL 2016.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MBA IV SEM MAIN 2016.rar')"></button></td>
+			<td align='center'><br>--</td>
+			<td align='center'><br>--</td>
+		</tr>
+		<tr>
+			<td align='center'><br>MCA&nbsp;&nbsp;</td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MCA I -II SEM MAIN 2016.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MCA II - I SEM SUPPL 2016.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MCA II -II SEM MAIN 2016.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MCA I-I SEM SUPPL.rar')"></button></td>
+			<td align='center'><button class="button icon-left ion-ios-download-outline" ng-click = "Download('http://cbit.ac.in/files/MCAIII - I SEM SUPPL 2016.rar')"></button></td>
+			<td align='center'><br>--</td>
+		</tr>
+		
+	</table>
+	<!--</ion-scroll>
+	
+	<center><h4>MBA (2016)</h4></center>
+	<div class="button-bar">
+		<button class="button button-positive">I Sem Suppl</button>
+		<button class="button button-positive">II Sem Main</button>
+	</div>
+	<div class="button-bar">
+		<button class="button button-assertive">III Sem Suppl</button>
+		<button class="button button-assertive">IV Sem Main</button>
+	</div>
+	<br>
+	<center><h4>MCA (2016)</h4></center>
+	<div class="button-bar">
+		<button class="button button-positive">I-II Sem Main</button>
+		<button class="button button-positive">II-I Sem Suppl</button>
+	</div>
+	<div class="button-bar">
+		<button class="button button-assertive">II-II Sem Main</button>
+		<button class="button button-assertive">I-I Sem Suppl</button>
+	</div>
+	-->
+	
+  </ion-content>
+</ion-view>

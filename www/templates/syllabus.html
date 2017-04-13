@@ -1,0 +1,55 @@
+<ion-view view-title="Syllabus">
+  <ion-content>
+	<progress value="{{downloadProgress}}" max="100" style = "height:30px; background:white; border:0px;">
+	</progress>
+    <center><h4>BE/BTech</h4></center>
+	
+  <div class="list">
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Department
+    </div>
+    <select ng-model="selectedDept" ng-change="department(selectedDept)">
+      <option ng-repeat ="item in depts" value = "{{item.d}}">{{item.d}}</option>
+    </select>
+  </label>
+<br>
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Year
+    </div>
+    <select ng-model="selectedYear" ng-change="year(selectedYear)">
+      <option ng-repeat ="itema in years" value = "{{itema.y}}">{{itema.y}}</option>
+    </select>
+  </label><br>
+	<div class="button-bar">
+		<button class="button button-assertive " ng-click="download()">Download</button>
+	</div>
+
+
+	
+	<br><br>
+<center><h4>ME/MTech, MBA & MCA</h4></center>
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Department
+    </div>
+    <select ng-model="selectedDept2" ng-change="department2(selectedDept2)">
+      <option ng-repeat ="itemb in depts2" value = "{{itemb.d}}">{{itemb.d}}</option>
+    </select>
+  </label>
+<br>
+	<div class="button-bar">
+		<button class="button button-energized" ng-click="download2()">
+		Download
+		</button>  
+	</div>
+</div>	
+	
+<!--{{downloadProgress}} {{sym}}-->
+	<br><br>
+	</ion-content>
+	
+	
+</ion-view>

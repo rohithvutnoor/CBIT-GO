@@ -1,0 +1,68 @@
+<ion-view view-title="Attendance">
+  <ion-content>
+  <br><br>
+	<button class = "button button-energized button-block" ng-click = "openBrowser()" ><i class="icon ion-ios-search"></i>&nbsp;&nbsp;&nbsp;Check Your Attendance</button><br><br>
+
+	<h4>
+		Calculate Here
+		<i class="icon ion-calculator"></i>
+	</h4>
+	
+	<br>
+	<div class="list">
+	
+   
+	<form name="attendanceForm" novalidate="" ng-submit="mineBunk(attendanceForm)">
+   
+
+   <label class="item item-input">
+   <input type="number" name="noc" ng-model="attendanceForm.noc" placeholder="No. of Classes Conducted" ng-change="cAlert(attendanceForm.noc)" ng-minlength="1"  ng-maxlength="3" ng-required="true" />
+	</label>
+<br>
+	
+	
+   <label class="item item-input">
+   <input type="number" name="noa" ng-model="attendanceForm.noa" placeholder="No. of Classes Attended" ng-change="aAlert(attendanceForm.noa)" ng-minlength="1"  ng-maxlength="3" ng-required="true" />
+</label>
+<br>
+   
+    <label class="item item-input item-select">
+    <div class="input-label">
+      Required Percentage
+    </div>
+    <select name="rp" ng-model="attendanceForm.rp" ng-required="true">
+      <option ng-repeat ="item in pList" value = "{{item}}">{{item}}%</option>
+    </select>
+  </label>
+  <br>
+   <button type="submit" class="button button-block button-positive" ng-disabled= "attendanceForm.$invalid" >Submit</button>
+   
+   <br><br>
+
+	 
+   </form>
+   
+   
+    
+
+</div>
+
+  </ion-content>
+  
+</ion-view>
+<!--
+ng-change="mineBunk(requiredP)"
+attended  - 298
+conducted - 353
+Percnt    - 84.42
+
+84.42 - 75 = 9.42
+
+
+   <label class="item item-input">
+   <span class="input-label">No. of Classes Conducted</span><input type="number" name="noc" ng-model="attendance.noc" placeholder="No. of Classes Conducted" required>
+   </label>
+
+
+
+-->
