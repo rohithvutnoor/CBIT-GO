@@ -1,5 +1,15 @@
 <ion-view view-title="Transport">
   <ion-content>
-	Hello
+				<div class="list list-inset">
+			  <label class="item item-input">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input ng-model="searchtxt"  type="text" placeholder="Search">
+			  </label>
+			</div>
+			<div class="row" ng-repeat = "user in data | filter : searchtxt"   ng-class-odd="'balanced'" ng-class-even="'assertive'">
+			  <div class="col col-20 textcenter">{{user.busNo}}</div>
+			  <div class="col  col-67">{{user.routeName}}</div>
+			  <div class="col textleft">{{user.time | number : 2}}</div>
+			</div>
   </ion-content>
 </ion-view>
