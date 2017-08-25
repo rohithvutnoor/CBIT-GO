@@ -1,1 +1,13 @@
 /* Empty. Add your own CSS if you like */
+.bar-header {
+   height: 48px; /*just an example*/
+}
+
+.bar-header .title {
+   line-height: 90px;
+   font-size: 45px;
+}
+
+.has-header {
+   top: 52px;
+}

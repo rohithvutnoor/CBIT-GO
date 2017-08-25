@@ -1,0 +1,30 @@
+<ion-view view-title="Departments">
+  <ion-content>
+  <div>
+  </div>
+	<div class="list">	
+		<div class="item">
+				<strong>Principal</strong><br>	<br>
+				Name: Dr. B. Chennakesava Rao<br>
+				Phone No: <a href="tel:+91-40-27622214">+91-40-27622214</a><br>
+				Email: raobck@rediffmail.com
+		</div>
+	</div>
+	
+	<div class="list">	
+	<div class="item"><strong>Departments of CBIT</strong></div>
+		<div class="item"  ng-repeat = "item in depts">
+				<strong>{{item.nod}}</strong><br>	<br>
+				Name: {{item.name}}<br>
+				Phone No: <a href="tel:{{item.phno}}">{{item.phno}}</a><br>
+				Email: {{item.email}}
+		</div>
+	</div>
+  </ion-content>
+</ion-view>
+<!--
+item-button-right
+<button class="button button-positive" ng-click = "call('{{item.phno}}')">
+					<i class="icon ion-ios-telephone"></i>
+				</button>
+-->

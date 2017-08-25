@@ -1,7 +1,7 @@
 <ion-view view-title="Syllabus">
   <ion-content>
-	<progress value="{{downloadProgress}}" max="100" style = "height:30px; background:white; border:0px;">
-	</progress>
+	<br><br>
+	
     <center><h4>BE/BTech</h4></center>
 	
   <div class="list">
@@ -24,7 +24,7 @@
     </select>
   </label><br>
 	<div class="button-bar">
-		<button class="button button-assertive " ng-click="download()">Download</button>
+		<button class="button button-energized " ng-click="download()">Download</button>
 	</div>
 
 
@@ -41,14 +41,15 @@
   </label>
 <br>
 	<div class="button-bar">
-		<button class="button button-energized" ng-click="download2()">
+		<button class="button button-assertive" ng-click="download2()">
 		Download
 		</button>  
 	</div>
 </div>	
-	
-<!--{{downloadProgress}} {{sym}}-->
 	<br><br>
+<!--{{downloadProgress}} {{sym}}-->
+<progress value="{{downloadProgress}}" max="100" style = "height:15px; border:0px; background-color:white; color:red;"><!--background:white;--></progress>
+	
 	</ion-content>
 	
 	

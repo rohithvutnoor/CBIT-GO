@@ -1,0 +1,216 @@
+<ion-view view-title="Placement Info">
+  <ion-content>
+  
+  <div class = "card">
+   	<div class="list">
+		<label class="item item-input item-select">
+			<div class="input-label">
+				Choose Branch
+			</div>		
+			<select ng-model="branch" ng-change="group(branch);">
+				<option ng-repeat ="item in branches" value = "{{item.code}}">{{item.name}}</option>
+			</select>	
+		</label>
+	</div>
+<!--	
+	<div class="item" ng-repeat ="item in data" >
+		<div ng-if= "item.branch == 'ece' ">{{item.name}}
+			
+		</div>
+	</div> -->
+  
+  </div>
+
+
+<div class = "card">
+			<div class="list">
+				<label class="item item-input item-select">
+					<div class="input-label">
+					Choose Company
+					</div>		
+					<select ng-model="index" ng-change="">
+						<option ng-repeat ="item in data" value = "{{item.index}}">{{item.name}}</option>
+					</select>	
+				</label>
+			</div>
+			<center><label>Year 2016 - 2017</label></center>
+			<div class="card">
+				<div class="item item-text-wrap">
+					<div class="row">
+						<strong><div class="col textbold">{{data[index].name}}</div></strong>
+						<div class="col  col-25"></div>
+					</div>
+					<div class="row">
+						<div class="col ">Salary Per Annum</div>
+						<div class="col  col-25">{{data[index].spa}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">Date of Test</div>
+						<div class="col  col-50">{{data[index].doi}}</div>
+					</div>
+					<hr>
+					
+					<div class="row">
+						<div class="col ">BE ECE</div>
+						<div class="col  col-25">{{data[index].ece}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">BE CSE</div>
+						<div class="col  col-25">{{data[index].cse}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">BE EEE</div>
+						<div class="col  col-25">{{data[index].eee}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">BE IT</div>
+						<div class="col  col-25">{{data[index].it}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">BE MECH</div>
+						<div class="col  col-25">{{data[index].mech}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">BE Prod</div>
+						<div class="col  col-25">{{data[index].prod}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">BE Civil</div>
+						<div class="col  col-25">{{data[index].civil}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">BE CHEM</div>
+						<div class="col  col-25">{{data[index].chem}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">BE BioTech</div>
+						<div class="col  col-25">{{data[index].bio}}</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col ">MCA</div>
+						<div class="col  col-25">{{data[index].mca}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">MTech CSE</div>
+						<div class="col  col-25">{{data[index].mtcse}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">MTech CNIS</div>
+						<div class="col  col-25">{{data[index].mtcnis}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">MTech ECE</div>
+						<div class="col  col-25">{{data[index].meece}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">MTech VLSI</div>
+						<div class="col  col-25">{{data[index].mevlsi}}</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col ">ME EEE</div>
+						<div class="col  col-25">{{data[index].meeee}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">ME CAD/CAM</div>
+						<div class="col  col-25">{{data[index].mecadcam}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">ME Thermal</div>
+						<div class="col  col-25">{{data[index].methermal}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">ME Civil</div>
+						<div class="col  col-25">{{data[index].mecivil}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">MBA</div>
+						<div class="col  col-25">{{data[index].mba}}</div>
+					</div>
+					
+					<hr><br>
+					<div class="row">
+						<div class="col ">Total</div>
+						<div class="col  col-25">{{data[index].total}}</div>
+					</div>
+					<div class="row">
+						<div class="col ">Total Campus Placements</div>
+						<div class="col  col-25">1362</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+			<div class="card">	
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>Campus Placements</strong>
+					</div>
+				</div>
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>2016-17	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1362</strong>
+					</div>
+				</div>
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>2015-16	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1353</strong>
+					</div>
+				</div>
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>2014-15	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1176</strong>
+					</div>
+				</div>
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>2013-14	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0853</strong>
+					</div>
+				</div>
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>2012-13	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0918</strong>
+					</div>
+				</div>
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>2011-12&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;1152</strong>
+					</div>
+				</div>
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>2010-11	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1110</strong>
+					</div>
+				</div>
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>2009-10	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0631</strong>
+					</div>
+				</div>
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>2008-09	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0617</strong>
+					</div>
+				</div>
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>2007-08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0688</strong>
+					</div>
+				</div>
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>2006-07	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0581</strong>
+					</div>
+				</div>
+				<div class="item itrm-text-wrap">
+					<div class="text-center">
+						<strong>2005-06	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0446</strong>
+					</div>
+				</div>
+			</div> 
+			   
+
+
+  </ion-content>
+</ion-view>

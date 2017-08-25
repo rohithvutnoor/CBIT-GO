@@ -1,9 +1,9 @@
-<ion-view view-title="Transport">
+<ion-view view-title="Transport Service">
   <ion-content>
-				<div class="list list-inset">
+			<div class="list list-inset">
 			  <label class="item item-input">
 				<i class="icon ion-search placeholder-icon"></i>
-				<input ng-model="searchtxt"  type="text" placeholder="Search">
+					<input ng-model="searchtxt"  type="text" placeholder="Search RouteNo | BusStop | Time">
 			  </label>
 			</div>
 			<div class="row" ng-repeat = "user in data | filter : searchtxt"   ng-class-odd="'balanced'" ng-class-even="'assertive'">
