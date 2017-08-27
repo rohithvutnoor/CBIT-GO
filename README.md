@@ -1,6 +1,6 @@
 # Update 3.3.0 Releasing Second Week Of This September
 
-# Junior's Special Features
+# Junior's Special Update
 * Department Info
 * Special Bus Route Information
 * Syllabus 
