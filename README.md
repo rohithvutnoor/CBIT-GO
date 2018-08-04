@@ -11,5 +11,5 @@
 
 
 
-![CBIT-GO](http://rohithvutnoor.com/images/project/cbitgo1.jpg)
+![CBIT-GO](http://rohithvutnoor.info/images/project/cbitgo1.jpg)
 
